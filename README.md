@@ -89,8 +89,6 @@ Contributers
 
  - Bjoern Gruening
  - Greg von Kuster
- - Alex Pletzer
-
 
 History
 =======
