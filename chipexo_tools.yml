@@ -1,0 +1,296 @@
+api_key: admin
+galaxy_instance: http://localhost:8080
+tools:
+- name: package_anaconda_2_3_0
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_atlas_3_10
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_bamtools_2_3_0_2d7685d2ae
+  owner: devteam
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_bedtools_2_22
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_bedtools_2_24
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_bwa_0_7_10_039ea20639
+  owner: devteam
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_bwa_0_7_12
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_bx_python_0_7
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_cairo_1_12_14
+  owner: devteam
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_fastqc_0_11_4
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_fatotwobit_35x1
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_fontconfig_2_11_1
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_freetype_2_5_2
+  owner: devteam
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_freetype_2_5_2
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_gnu_coreutils_8_25
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_imagemagick_6_9_3
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_libpng_1_6_7
+  owner: devteam
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_libpng_1_6_7
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_libxml2_2_9_1
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_libxml2_2_9_3
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_libxslt_1_1_28
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_meme_4_11_0
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_ncurses_5_9
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_numpy_1_7
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_perl_5_18
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_perl_xml_parser_expat_2_41
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_picard_1_136
+  owner: devteam
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_pixman_0_32_4
+  owner: devteam
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_r_3_0_3
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_r_3_1_2
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_readline_6_2
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_samtools_0_1_18
+  owner: devteam
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_samtools_0_1_19
+  owner: devteam
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_samtools_1_2
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_ucsc_tools_312
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: package_zlib_1_2_8
+  owner: iuc
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: repeat_masker
+  owner: bgruening
+  tool_panel_section_label: "Filter and Sort"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: bam_to_scidx
+  owner: iuc
+  tool_panel_section_label: "Convert Formats"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: extract_genomic_dna
+  owner: iuc
+  tool_panel_section_label: "Fetch Sequences"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: fasta_nucleotide_color_plot
+  owner: iuc
+  tool_panel_section_label: "Graph/Display Data"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: paired_end_histogram
+  owner: iuc
+  tool_panel_section_label: "Graph/Display Data"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: resize_coordinate_window
+  owner: iuc
+  tool_panel_section_label: "Operate on Genomic Intervals"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: fastqc
+  owner: devteam
+  tool_panel_section_label: "NGS: QC and Manipulation"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: bwa
+  owner: devteam
+  tool_panel_section_label: "NGS: Mapping"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: bamtools_filter
+  owner: devteam
+  tool_panel_section_label: "NGS: BAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: bam_to_sam
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: sam_to_bam
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: samtool_filter2
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: samtools_bedcov
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: samtools_calmd
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: samtools_flagstat
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: samtools_idxstats
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: samtools_mpileup
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: samtools_reheader
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: samtools_rmdup
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: samtools_slice_bam
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: samtools_sort
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: samtools_split
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: samtools_stats
+  owner: devteam
+  tool_panel_section_label: "NGS: SAMTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: picard
+  owner: devteam
+  tool_panel_section_label: "NGS: Picard"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: genetrack
+  owner: iuc
+  tool_panel_section_label: "NGS: Peak Calling"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: cwpair2
+  owner: iuc
+  tool_panel_section_label: "NGS: Peak Calling"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: repmatch_gff3
+  owner: iuc
+  tool_panel_section_label: "NGS: Peak Calling"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: bedtools
+  owner: iuc
+  tool_panel_section_label: "BEDTools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: meme_fimo
+  owner: iuc
+  tool_panel_section_label: "Motif Tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: meme_meme
+  owner: iuc
+  tool_panel_section_label: "Motif Tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu

@@ -51,7 +51,7 @@ The contents of the Container can be changed within a session, but all of your c
 
 Fortunately, this is as easy as:
 
-``docker run -d -p 8080:80 -v /home/user/galaxy_storage/:/export/ gregvonkuster/docker-galaxy-ChIP-exo``
+``docker run -d -p 8080:80 -v /home/user/galaxy_storage/:/export/ gregvonkuster/docker-galaxy-chip-exo``
 
 With the additional ``-v /home/user/galaxy_storage/:/export/`` parameter, docker will mount the folder ``/home/user/galaxy_storage`` into the Container under ``/export/``. A ``startup.sh`` script that starts Apache, PostgreSQL and Galaxy within the Container will recognize the export directory with one of the following results:
 
