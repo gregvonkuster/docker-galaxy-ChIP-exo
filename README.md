@@ -1,6 +1,8 @@
-# docker-galaxy-ChIP-exo
+[![Docker Repository on Quay](https://quay.io/repository/gregvonkuster/galaxy-chip-exo/status "Docker Repository on Quay")](https://quay.io/repository/gregvonkuster/galaxy-chip-exo)
+[![Build Status](https://travis-ci.org/gregvonkuster/docker-galaxy-ChIP-exo.svg?branch=master)](https://travis-ci.org/gregvonkuster/docker-galaxy-ChIP-exo)
+
 Galaxy workbench for ChIP-exo analysis (Galaxy ChIP-exo flavor)
-============================================================
+===============================================================
 
 Galaxy instance with ChIP-exo tools shipped in a Docker container. :whale:
 
@@ -10,9 +12,17 @@ Usage
 
 First you need to install docker for your platform by following the instruction at https://docs.docker.com/installation/
 
-After successful installation, do this:
+After successful installation, get the default IP address used by docker:
 
-``docker run -d -p 8080:80 gregvonkuster/docker-galaxy-ChIP-exo``
+``docker-machine ip default``
+
+The above command should display an IP address like this:
+
+``192.168.99.100``
+
+Now do this:
+
+``docker run -d -p 8080:80 gregvonkuster/docker-galaxy-chip-exo``
 
 Consult the [docker manual](http://docs.docker.io/) for detailed information about using docker (its really worth reading).
 
@@ -23,16 +33,17 @@ Quick start:
 
 ``-p 8080:80`` will make port 80 (inside the container) available on port 8080 of your computer.  Within the container an Apache Webserver
 is running on port 80 and that port can be bound to a local port on your computer.  With this parameter you can access your Galaxy
-instance via ``http://localhost:8080`` immediately after executing the command above.
+instance by pointing your browser to ``http://localhost:8080``.  If that address doesn't work, try the default docker IP address you
+discovered above (e.g., ``http://192.168.99.100``).
 
-``gregvonkuster/galaxy-ChIP-exo`` is the Image/Container name that directs docker to the correct path in the
+``gregvonkuster/galaxy-chip-exo`` is the Image/Container name that directs docker to the correct path in the
 [docker index](https://index.docker.io/u/gregvonkuster/galaxy-ChIP-exo/).
 
 ``:master`` is the specific tag of the Image/Container that will be pulled from the [docker index](https://index.docker.io/u/gregvonkuster/galaxy-ChIP-exo/) and run.
 
 For an interactive session, you can execute:
 
-``docker run -i -t -p 8080:80 gregvonkuster/docker-galaxy-ChIP-exo``
+``docker run -i -t -p 8080:80 gregvonkuster/docker-galaxy-chip-exo``
 
 and run the ``` startup ``` script yourself to start PostgreSQL, Apache and Galaxy.
 
@@ -44,8 +55,18 @@ Fortunately, this is as easy as:
 
 With the additional ``-v /home/user/galaxy_storage/:/export/`` parameter, docker will mount the folder ``/home/user/galaxy_storage`` into the Container under ``/export/``. A ``startup.sh`` script that starts Apache, PostgreSQL and Galaxy within the Container will recognize the export directory with one of the following results:
 
-  - In case of an empty ``/export/`` directory, it will move the [PostgreSQL](http://www.postgresql.org/) database, the Galaxy database directory, Shed Tools and Tool Dependencies and various configuration scripts to /export/ and symlink back to the original location.
+  - In case of an empty ``/export/`` directory, it will move the [PostgreSQL](http://www.postgresql.org/) database, the Galaxy database directory, Shed Tools, Tool Dependencies and various configuration scripts to /export/ and symlink back to the original location.
   - In case of a non-empty ``/export/``, (e.g.,if you continue a previous session within the same folder) nothing will be moved, but the symlinks will be created.
+
+This enables you to have different export folders for different sessions - i.e., real separation of your different projects.
+
+
+With the additional ``-v /home/user/galaxy_storage/:/export/`` parameter, docker will mount the folder ``/home/user/galaxy_storage``
+into the Container under ``/export/``. A ``startup.sh`` script that starts Apache, PostgreSQL and Galaxy will recognize the export
+directory with one of the following results:
+
+  - In case of an empty ``/export/`` directory, it will move the [PostgreSQL](http://www.postgresql.org/) database, the Galaxy database directory, Shed Tools and Tool Dependencies and various config scripts to /export/ and symlink back to the original location.
+  - In case of a non-empty ``/export/`` (e.g., if you continue a previous session within the same folder), nothing will be moved, but the symlinks will be created.
 
 This enables you to have different export folders for different sessions - i.e., real separation of your different projects.
 
@@ -56,7 +77,7 @@ Enabling Interactive Environments in Galaxy
 Interactive Environments (IE) are sophisticated ways to extend Galaxy with powerful services, like IPython, in a secure and reproducible way.
 For this we need to be able to launch Docker containers inside our Galaxy Docker container. Docker 1.3 or newer is needed on the host system.
 
-``docker run -d -p 8080:80 -p 8021:21 -p 8800:8800 --privileged=true -v /home/user/galaxy_storage/:/export/ gregvonkuster/docker-galaxy-ChIP-exo``
+``docker run -d -p 8080:80 -p 8021:21 -p 8800:8800 --privileged=true -v /home/user/galaxy_storage/:/export/ gregvonkuster/docker-galaxy-chip-exo``
 
 The port 8800 is the proxy port that is used to handle Interactive Environments. ``--privileged`` is needed to start docker containers inside docker.
 
@@ -66,8 +87,7 @@ On some linux distributions, Docker-In-Docker can run into issues (such as runni
 you can use a 'legacy' mode that uses a docker socket for the parent docker installation mounted inside the container. To engage, set the 
 environment variable DOCKER_PARENT
 
-``docker run -d -p 8080:80 -p 8021:21 -p 8800:8800 --privileged=true -e DOCKER_PARENT=True -v /var/run/docker.sock:/var/run/docker.sock -v /home/user/galaxy_storage/:/export/ gregvonkuster/docker-galaxy-ChIP-exo``
-
+``docker run -d -p 8080:80 -p 8021:21 -p 8800:8800 --privileged=true -e DOCKER_PARENT=True -v /var/run/docker.sock:/var/run/docker.sock -v /home/user/galaxy_storage/:/export/ gregvonkuster/docker-galaxy-chip-exo``
 
 
 Users & Passwords
@@ -89,6 +109,7 @@ Contributers
 
  - Bjoern Gruening
  - Greg von Kuster
+
 
 History
 =======
