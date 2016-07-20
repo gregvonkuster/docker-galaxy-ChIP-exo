@@ -6,13 +6,12 @@ Galaxy workbench for ChIP-exo analysis (Galaxy ChIP-exo flavor)
 
 Galaxy instance with ChIP-exo tools shipped in a Docker container. :whale:
 
-
 Usage
 =====
 
 First you need to install docker for your platform by following the instruction at https://docs.docker.com/installation/
 
-After successful installation, get the default IP address used by docker:
+If running on OS X (skip this if running on Linux), after successful installation, get the default IP address used by docker:
 
 ``docker-machine ip default``
 
@@ -20,11 +19,11 @@ The above command should display an IP address like this:
 
 ``192.168.99.100``
 
-Now do this:
+Now do this (no matter the OS):
 
 ``docker run -d -p 8080:80 gregvonkuster/docker-galaxy-chip-exo``
 
-Consult the [docker manual](http://docs.docker.io/) for detailed information about using docker (its really worth reading).
+Consult the [docker manual](http://docs.docker.io/) for detailed information about using docker (it is really worth reading).
 
 Quick start:
 ``docker run`` will run the Image/Container for you. If you do not have the Container stored locally, docker will download it for you.
@@ -33,7 +32,7 @@ Quick start:
 
 ``-p 8080:80`` will make port 80 (inside the container) available on port 8080 of your computer.  Within the container an Apache Webserver
 is running on port 80 and that port can be bound to a local port on your computer.  With this parameter you can access your Galaxy
-instance by pointing your browser to ``http://localhost:8080``.  If that address doesn't work, try the default docker IP address you
+instance by pointing your browser to ``http://localhost:8080`` if running on Linux.  On OS X use the default docker IP address you
 discovered above (e.g., ``http://192.168.99.100``).
 
 ``gregvonkuster/galaxy-chip-exo`` is the Image/Container name that directs docker to the correct path in the
@@ -43,7 +42,7 @@ discovered above (e.g., ``http://192.168.99.100``).
 
 For an interactive session, you can execute:
 
-``docker run -i -t -p 8080:80 gregvonkuster/docker-galaxy-chip-exo``
+``docker run -i -t -p 8080:80 gregvonkuster/docker-galaxy-chip-exo /bin/bash``
 
 and run the ``` startup ``` script yourself to start PostgreSQL, Apache and Galaxy.
 
@@ -70,7 +69,6 @@ directory with one of the following results:
 
 This enables you to have different export folders for different sessions - i.e., real separation of your different projects.
 
-
 Enabling Interactive Environments in Galaxy
 -------------------------------------------
 
@@ -89,7 +87,6 @@ environment variable DOCKER_PARENT
 
 ``docker run -d -p 8080:80 -p 8021:21 -p 8800:8800 --privileged=true -e DOCKER_PARENT=True -v /var/run/docker.sock:/var/run/docker.sock -v /home/user/galaxy_storage/:/export/ gregvonkuster/docker-galaxy-chip-exo``
 
-
 Users & Passwords
 ================
 
@@ -97,12 +94,10 @@ The Galaxy Admin User has the username ``admin@galaxy.org`` and the password ``a
 The PostgreSQL username is ``galaxy``, the password is ``galaxy`` and the database name is ``galaxy``.
 To create new users, make sure to use the ``/export/`` volume or the user will be eliminated after your docker session ends.
 
-
 Requirements
 ============
 
 - [docker](https://docs.docker.com/installation/)
-
 
 Contributers
 ============
@@ -110,19 +105,15 @@ Contributers
  - Bjoern Gruening
  - Greg von Kuster
 
-
 History
 =======
 
  - 0.1: Initial release!
 
-
 Support & Bug Reports
 =====================
 
 For support, questions, or feature requests please see https://github.com/gregvonkuster/galaxy-ChIP-exo/issues.
-
-
 
 Licence (MIT)
 =============

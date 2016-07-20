@@ -147,27 +147,27 @@ tools:
 
 - name: repeat_masker
   owner: bgruening
-  tool_panel_section_label: "Filter and Sort"
+  tool_panel_section_id: 'filter'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 
 - name: bam_to_scidx
   owner: iuc
-  tool_panel_section_label: "Convert Formats"
+  tool_panel_section_id: 'convert'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 
 - name: extract_genomic_dna
   owner: iuc
-  tool_panel_section_label: "Fetch Sequences"
+  tool_panel_section_id: 'fetchSeq'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 
 - name: fasta_nucleotide_color_plot
   owner: iuc
-  tool_panel_section_label: "Graph/Display Data"
+  tool_panel_section_id: 'plots'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 
 - name: paired_end_histogram
   owner: iuc
-  tool_panel_section_label: "Graph/Display Data"
+  tool_panel_section_id: 'plots'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 
 - name: resize_coordinate_window
