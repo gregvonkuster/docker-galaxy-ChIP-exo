@@ -165,148 +165,208 @@ tools:
   owner: bgruening
   tool_panel_section_id: 'filter'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 5673e72241aa
 
 - name: bam_to_scidx
   owner: iuc
   tool_panel_section_id: 'convert'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 11fc60f0e942
 
 - name: extract_genomic_dna
   owner: iuc
   tool_panel_section_id: 'fetchSeq'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 702970e4a134
 
 - name: fasta_nucleotide_color_plot
   owner: iuc
   tool_panel_section_id: 'plots'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 260f7da5a7e5
 
 - name: pe_histogram
   owner: iuc
   tool_panel_section_id: 'plots'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 2f6c7f82ad4a
 
 - name: resize_coordinate_window
   owner: iuc
   tool_panel_section_label: "Operate on Genomic Intervals"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 0164d2edba9f
 
 - name: fastqc
   owner: devteam
   tool_panel_section_label: "NGS: QC and Manipulation"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 3fdc1a74d866
 
 - name: bwa
   owner: devteam
   tool_panel_section_label: "NGS: Mapping"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 546ada4a9f43
 
 - name: bamtools_filter
   owner: devteam
   tool_panel_section_label: "NGS: BAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 2098a49ddf66
 
 - name: bam_to_sam
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - af7c50162f0b
 
 - name: sam_to_bam
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 881e16ad05c6
 
 - name: samtool_filter2
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - c31a37f6d48a
 
 - name: samtools_bedcov
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 8c3472790020
 
 - name: samtools_calmd
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 1ebb4ecdc1ef
 
 - name: samtools_flagstat
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 0072bf593791
 
 - name: samtools_idxstats
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 87398ae795c7
 
 - name: samtools_mpileup
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - bfc4517aa037
 
 - name: samtools_reheader
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 020e144b5f78
 
 - name: samtools_rmdup
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - bb40e4252392
 
 - name: samtools_slice_bam
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 2b474ebbfc7d
 
 - name: samtools_sort
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - a430da4f04cd
 
 - name: samtools_split
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 57f3e32f809d
 
 - name: samtools_stats
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 8cfc17e27132
 
 - name: picard
   owner: devteam
   tool_panel_section_label: "NGS: Picard"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - efc56ee1ade4
 
 - name: genetrack
   owner: iuc
   tool_panel_section_label: "NGS: Peak Calling"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 25cd59a002d9
 
 - name: cwpair2
   owner: iuc
   tool_panel_section_label: "NGS: Peak Calling"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - d4db13c9dd7f
 
 - name: repmatch_gff3
   owner: iuc
   tool_panel_section_label: "NGS: Peak Calling"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - a072f0f30ea3
 
 - name: bedtools
   owner: iuc
   tool_panel_section_label: "BEDTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 8e6b7c3597a8
 
 - name: meme_fimo
   owner: iuc
   tool_panel_section_label: "Motif Tools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - b3f7ff168b9a
 
 - name: meme_meme
   owner: iuc
   tool_panel_section_label: "Motif Tools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+    - 62d1fae3b7d3
