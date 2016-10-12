@@ -12,11 +12,8 @@ ENV GALAXY_CONFIG_BRAND="Galaxy ChIP-exo" \
     GALAXY_CONFIG_CONDA_AUTO_INIT=True
 
 RUN add-tool-shed --url 'https://toolshed.g2.bx.psu.edu/' --name 'Main Tool Shed'
+RUN apt-get -qq update && apt-get install --no-install-recommends -y openjdk-7-jdk
 
-# Install imaging tools
+# Install ChIP-exo tools
 ADD chipexo_tools.yml $GALAXY_ROOT/tools.yaml
-RUN install-tools $GALAXY_ROOT/tools.yaml && \
-    /tool_deps/_conda/bin/conda clean --tarballs
-
-# Import workflows
-ADD import_workflows.py $GALAXY_ROOT/import_workflows.py
+RUN install-tools $GALAXY_ROOT/tools.yaml
