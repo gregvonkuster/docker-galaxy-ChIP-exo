@@ -2,7 +2,7 @@
 #
 # VERSION       0.1
 
-FROM quay.io/bgruening/galaxy:16.04
+FROM quay.io/bgruening/galaxy:master
 
 MAINTAINER Greg Von Kuster, ghv2@psu.edu
 
