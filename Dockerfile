@@ -2,7 +2,7 @@
 #
 # VERSION       0.1
 
-FROM quay.io/bgruening/galaxy:jmc_conda
+FROM bgruening/galaxy-stable:17.01
 
 MAINTAINER Greg Von Kuster, ghv2@psu.edu
 
