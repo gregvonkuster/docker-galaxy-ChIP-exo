@@ -2,16 +2,11 @@
 #
 # VERSION       0.1
 
-FROM bgruening/galaxy-stable:17.01
+FROM quay.io/bgruening/galaxy:18.01
 
 MAINTAINER Greg Von Kuster, ghv2@psu.edu
 
 ENV GALAXY_CONFIG_BRAND="Galaxy ChIP-exo"
-ENV ENABLE_TTS_INSTALL=True
-
-# Enable conda dependency resolution
-ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True \
-    GALAXY_CONFIG_CONDA_AUTO_INIT=True
 
 # Install ChIP-exo tools
 ADD chipexo_tools.yml $GALAXY_ROOT/tools.yaml
