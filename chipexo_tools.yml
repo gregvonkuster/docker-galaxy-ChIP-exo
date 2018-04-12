@@ -1,305 +1,206 @@
 api_key: admin
 galaxy_instance: http://localhost:8080
-tools:
+tool_shed_url: https://toolshed.g2.bx.psu.edu
+install_resolver_dependencies: True
+install_tool_dependencies: False
 
+tools:
 - name: data_manager_bwa_mem_index_builder
   owner: devteam
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 414a92a973fa
 
 - name: data_manager_fetch_genome_dbkeys_all_fasta
   owner: devteam
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 86fa71e9b427
 
 - name: data_manager_sam_fasta_index_builder
   owner: devteam
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 2a1ac1abc3f7
 
 - name: data_manager_twobit_builder
   owner: devteam
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - df883cc67fbd
 
 - name: repeat_masker
   owner: bgruening
   tool_panel_section_id: 'filter'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 5673e72241aa
 
 - name: bam_to_scidx
   owner: iuc
   tool_panel_section_id: 'convert'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - b737f6d83f48
 
 - name: extract_genomic_dna
   owner: iuc
   tool_panel_section_id: 'fetchSeq'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 4822a36300fd
 
 - name: fasta_nucleotide_color_plot
   owner: iuc
   tool_panel_section_id: 'plots'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 0fba45ac3987
 
 - name: pe_histogram
   owner: iuc
   tool_panel_section_id: 'plots'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - b1a427b17e9c
 
 - name: resize_coordinate_window
   owner: iuc
   tool_panel_section_label: "Operate on Genomic Intervals"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 541f300f322d
 
 - name: fastqc
   owner: devteam
   tool_panel_section_label: "NGS: QC and Manipulation"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 3a458e268066
 
 - name: bwa
   owner: devteam
   tool_panel_section_label: "NGS: Mapping"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - bd3a1e0de84c
 
 - name: bamtools_filter
   owner: devteam
   tool_panel_section_label: "NGS: BAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 3213c223678c
 
 - name: bam_to_sam
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - af7c50162f0b
 
 - name: sam_to_bam
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 881e16ad05c6
 
 - name: samtool_filter2
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - d3292b4a0c78
 
 - name: samtools_bedcov
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 8c3472790020
 
 - name: samtools_calmd
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 1ebb4ecdc1ef
 
 - name: samtools_flagstat
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 0072bf593791
 
 - name: samtools_idxstats
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 87398ae795c7
 
 - name: samtools_mpileup
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - bfc4517aa037
 
 - name: samtools_reheader
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 020e144b5f78
 
 - name: samtools_rmdup
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - bb40e4252392
 
 - name: samtools_slice_bam
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 2b474ebbfc7d
 
 - name: samtools_sort
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - a430da4f04cd
 
 - name: samtools_split
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 57f3e32f809d
 
 - name: samtools_stats
   owner: devteam
   tool_panel_section_label: "NGS: SAMTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 8cfc17e27132
 
 - name: picard
   owner: devteam
   tool_panel_section_label: "NGS: Picard"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 00fe2ff64467
 
 - name: genetrack
   owner: iuc
   tool_panel_section_label: "NGS: Peak Calling"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - aaca27a5263b
 
 - name: cwpair2
   owner: iuc
   tool_panel_section_label: "NGS: Peak Calling"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 436dc65bd902
 
 - name: repmatch_gff3
   owner: iuc
   tool_panel_section_label: "NGS: Peak Calling"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - f7608d0363bf
 
 - name: bedtools
   owner: iuc
   tool_panel_section_label: "BEDTools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 7b3aaff0d78c
 
 - name: meme_fimo
   owner: iuc
   tool_panel_section_label: "Motif Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - 40b8472e91ca
 
 - name: meme_meme
   owner: iuc
   tool_panel_section_label: "Motif Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   revisions:
     - e8b209806a20

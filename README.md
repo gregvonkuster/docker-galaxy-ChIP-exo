@@ -1,5 +1,6 @@
 [![Docker Repository on Quay](https://quay.io/repository/gregvonkuster/galaxy-chip-exo/status "Docker Repository on Quay")](https://quay.io/repository/gregvonkuster/galaxy-chip-exo)
 [![Build Status](https://travis-ci.org/gregvonkuster/docker-galaxy-ChIP-exo.svg?branch=master)](https://travis-ci.org/gregvonkuster/docker-galaxy-ChIP-exo)
+[![Gitter](https://badges.gitter.im/bgruening/docker-galaxy-stable.svg)](https://gitter.im/bgruening/docker-galaxy-stable?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Galaxy workbench for ChIP-exo analysis (Galaxy ChIP-exo flavor)
 ===============================================================
